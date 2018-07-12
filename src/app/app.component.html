@@ -1,26 +1,34 @@
-  <nav class="demo">
-    <a href="#" class="brand">
-      <img class="logo" src="http://0.gravatar.com/avatar/0a147b627ba4cfdaa2f98a6ebe46c0b6?s=100&d=mm&r=g" />
-      <span>Elinks</span>
-    </a>
+<nav class="demo">
+  <a href="#" class="brand">
+    <img class="logo" src="http://0.gravatar.com/avatar/0a147b627ba4cfdaa2f98a6ebe46c0b6?s=100&d=mm&r=g" />
+    <span>Elinks</span>
+  </a>
 
-    <!-- responsive-->
-    <input id="bmenub" type="checkbox" class="show">
-    <label for="bmenub" class="burger pseudo button">menu</label>
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button">menu</label>
 
-    <div class="menu">
-      <a href="#" class="pseudo button icon-picture">Demo</a>
-      <a href="#" class="button icon-puzzle">Plugins</a>
-    </div>
-  </nav>
-<div class="content">
-
-  <div>
-      <article class="card">
-          <header>
-            <button>Love</button>
-            <button class="dangerous">Hate</button>
-          </header>
-        </article>
+  <div class="menu">
+    <a href="#" class="pseudo button icon-picture">Demo</a>
+    <a href="#" class="button">Add</a>
   </div>
+</nav>
+<div class="content">
+  <app-category-selector></app-category-selector>
+  <article class="card">
+    <header>
+      <button>Category</button>
+      <button class="dangerous">Hate</button>
+    </header>
+    <footer>
+        <span class="button stack">
+          Home - <small>This is test subtitle</small>
+          <span style="float: right;">No se</span>
+        </span>
+        <span class="button stack">Plugins</span>
+        <span class="button stack">Documentation</span>
+        <span class="button stack">Test</span>
+    </footer>
+  </article>
+
 </div>

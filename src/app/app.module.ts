@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CategorySelectorComponent } from './components/category-selector/category-selector.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategorySelectorComponent
   ],
   imports: [
     BrowserModule
