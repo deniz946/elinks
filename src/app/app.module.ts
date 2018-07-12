@@ -1,3 +1,4 @@
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,7 +10,8 @@ import { CategorySelectorComponent } from './components/category-selector/catego
 @NgModule({
   declarations: [
     AppComponent,
-    CategorySelectorComponent
+    CategorySelectorComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
