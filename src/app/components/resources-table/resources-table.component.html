@@ -1,0 +1,42 @@
+<article class="card">
+  <header>
+    <button>Category</button>
+    <button class="dangerous">Hate</button>
+  </header>
+  <footer>
+    <label for="resourceModal">
+      <span class="button stack" *ngFor="let resource of resources | async">
+        {{resource.title}} -
+        <small>{{resource.description}}</small>
+      </span>
+    </label>
+  </footer>
+</article>
+
+<div class="modal">
+  <input id="resourceModal" type="checkbox" />
+  <label for="resourceModal" class="overlay"></label>
+  <article>
+    <header>
+      <h3>Details for </h3>
+      <label for="resourceModal" class="close">&times;</label>
+    </header>
+    <section class="content">
+      <fieldset class="flex two">
+        <label>
+          <input type="email" placeholder="Title">
+        </label>
+        <label>
+          <input type="email" placeholder="Subtitle">
+        </label>
+      </fieldset>
+      <textarea placeholder="Extra description"></textarea>
+    </section>
+    <footer>
+      <a class="button" href="#">See offer</a>
+      <label for="modal_1" class="button dangerous">
+        Cancel
+      </label>
+    </footer>
+  </article>
+</div>
